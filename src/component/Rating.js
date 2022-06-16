@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { reduxRating } from "../redux/ratingSlice";
 
 import RatingButton from "./RatingButton";
