@@ -1,0 +1,34 @@
+.thank-you-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-you-container img{
+    margin-bottom: 2rem;
+}
+
+.thank-you-rating-value{
+    padding: 6px 24px;
+    background-color: hsl(213, 19%, 28%);
+    border-radius: 38px;
+    margin-bottom: 2rem;
+}
+
+.thank-you-rating-value p{
+    color: hsl(25, 97%, 53%);
+    font-size: 1rem;
+}
+
+.thank-you{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.thank-you-p{
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1rem;
+}

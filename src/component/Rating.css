@@ -1,0 +1,61 @@
+
+.rating-circle{
+    width: 46px;
+    height: 46px;
+  
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 28%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin-bottom: 2rem;
+  }
+  
+  .rating-circle img{
+    width: 40%;
+    height: 40%;
+  }
+  
+  .rating-title{
+    font-size: 1.73rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .rating-desc{
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .rating-form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .rating-submit{
+    width: 100%;
+    height: 50px;
+  
+    border-radius: 64px;
+    border: 0;
+  
+    background-color: hsl(25, 97%, 53%);
+    
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .rating-submit:hover, .rating-submit:active{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    
+    transition: all 0.3s ease-in-out;
+  }
