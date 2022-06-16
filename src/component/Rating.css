@@ -44,8 +44,7 @@
     border: 0;
   
     background-color: hsl(25, 97%, 53%);
-    
-    color: white;
+
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -55,7 +54,16 @@
   
   .rating-submit:hover, .rating-submit:active{
     background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .rating-submit a{
+    color: white;
+    text-decoration: none;
+    transition: all;
+  }
+
+  .rating-submit:hover a{
     color: hsl(25, 97%, 53%);
-    
     transition: all 0.3s ease-in-out;
   }

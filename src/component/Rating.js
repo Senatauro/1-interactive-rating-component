@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { reduxRating } from "../redux/ratingSlice";
 
@@ -10,7 +10,7 @@ import star from "../icon-star.svg";
 
 export default function Rating(props) {
   const [rating, setRating] = useState(0);
-
+  const navigate = useNavigate();
   /* Texting redux */
   const dispatch = useDispatch();
 
@@ -31,6 +31,7 @@ export default function Rating(props) {
 
   function submitRating() {
     dispatch(reduxRating(rating));
+    navigate("/thank-you");
   }
 
   return (
@@ -44,9 +45,9 @@ export default function Rating(props) {
         appreciated to help us improve our offering!
       </p>
       <div className="rating-form">{form}</div>
-      <Link to="/thank-you">
-        <button className="rating-submit" onClick={submitRating}>Submit</button>
-      </Link>
+      <button className="rating-submit" onClick={submitRating}>
+          submit
+      </button>
     </>
   );
 }
