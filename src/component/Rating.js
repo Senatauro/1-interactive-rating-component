@@ -13,7 +13,6 @@ export default function Rating(props) {
 
   /* Texting redux */
   const dispatch = useDispatch();
-  const selector = useSelector((state) => state.rating.value);
 
   const form = new Array(5).fill(0).map((_, i) => {
     return (
